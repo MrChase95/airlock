@@ -172,7 +172,7 @@ We may update this Policy when software behaviour changes (network, storage, or 
 
 ## Contact and complaints
 
-**Reference publisher (as per project metadata):** Matheus — **Airlock** (see `package.json` and project metadata).
+**Reference publisher (as per project metadata):** MrChase95 — **Airlock** (see `package.json` and project metadata).
 
 - **Support website / repository:** https://github.com/MrChase95/airlock  
 - **Support and privacy contact email:** mferreira95@protonmail.com

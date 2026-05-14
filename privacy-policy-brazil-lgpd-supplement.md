@@ -10,7 +10,7 @@ If this supplement **conflicts** with the main Policy **for Brazil only**, this 
 
 ## Controller (encarregado / controlador)
 
-For processing described in the main Policy where **Matheus** (reference distribution) acts as **controller** (e.g. communications you send us), the controller is as identified in **Contact** in the main Policy. For data processed **only locally** on your device by you, **you** may be the controller in relation to third parties you interact with.
+For processing described in the main Policy where **MrChase95** (reference distribution) acts as **controller** (e.g. communications you send us), the controller is as identified in **Contact** in the main Policy. For data processed **only locally** on your device by you, **you** may be the controller in relation to third parties you interact with.
 
 **Data Protection Officer (DPO):** LGPD may require a DPO for certain controllers. **[Add DPO name and contact if mandatory for your entity, or state “Not applicable” with justification per legal advice.]**
 

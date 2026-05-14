@@ -120,7 +120,7 @@ Podemos atualizar este documento quando o comportamento do software mudar (novas
 
 ## Contato e exercício de direitos
 
-**Responsável / editor do software (distribuição de referência):** Matheus — produto **Airlock** (ver `package.json` e metadados do projeto).
+**Responsável / editor do software (distribuição de referência):** MrChase95 — produto **Airlock** (ver `package.json` e metadados do projeto).
 
 Para questões sobre **esta política** ou dados tratados **no contexto da distribuição que mantemos**, utilize um dos seguintes (ajuste conforme o canal real do seu projeto):
 
