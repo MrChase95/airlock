@@ -1,0 +1,123 @@
+name: Relatório de bug
+description: Algo não funciona como esperado no Airlock
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar. Preencha os campos abaixo — as dicas em cada seção ajudam a reproduzir o problema mais rápido.
+        **Não cole tokens, senhas, vault secrets ou dados pessoais.**
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: O que aconteceu? Resuma em 1–3 frases.
+      placeholder: Ex.: Ao enviar um POST com body JSON, o app trava e preciso fechar pelo Gerenciador de Tarefas.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      description: Lista numerada do que você fez até o erro. Inclua coleção/request se for relevante.
+      placeholder: |
+        1. Abrir o Airlock e selecionar o environment "Dev"
+        2. Abrir a coleção X → request "Login"
+        3. Clicar em Send
+        4. Ver o erro / comportamento
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria acontecer.
+      placeholder: Ex.: A resposta HTTP deveria aparecer no painel Response.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento atual
+      description: O que de fato acontece. Cole a mensagem de erro completa, se houver.
+      placeholder: Ex.: Aparece "unable to verify the first certificate" e a requisição não completa.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versão do Airlock
+      description: Menu Sobre, ou versão na Microsoft Store / nome do instalador (ex. Airlock-0.10.0-x64.msi).
+      placeholder: "0.10.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install_channel
+    attributes:
+      label: Como instalou
+      description: Canal de instalação do app que apresentou o problema.
+      options:
+        - Microsoft Store
+        - MSI (GitHub Releases)
+        - AppX / MSIX (GitHub Releases)
+        - DMG (macOS)
+        - AppImage (Linux)
+        - deb (Linux)
+        - Outro / não sei
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Sistema operacional
+      description: SO e versão, se souber.
+      placeholder: "Ex.: Windows 11 24H2 | macOS 15.3 | Ubuntu 24.04"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área afetada
+      description: Escolha a área mais próxima do problema.
+      options:
+        - Cliente HTTP (Send / Response)
+        - Runner / fluxos
+        - Coleções / pastas / requests
+        - Ambientes
+        - Vault
+        - Quick Import
+        - Git Sync
+        - Mock Server
+        - Console / logs
+        - UI / acessibilidade
+        - Outro
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Console (opcional)
+      description: Cole um trecho do Console do Airlock se ajudar. Remova secrets, tokens e dados sensíveis antes de enviar.
+      placeholder: |
+        Cole aqui linhas relevantes do console…
+      render: text
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Capturas de tela
+        Se puder, **anexe imagens** abaixo (arraste para esta página ou use o botão de anexo). Telas do erro, do request e do Response ajudam bastante.

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Downloads e releases
+    url: https://github.com/MrChase95/airlock/releases
+    about: Baixe a versão mais recente (MSI, AppX, macOS, Linux).
+  - name: Microsoft Store
+    url: https://apps.microsoft.com/detail/9PBNSNG77WXF
+    about: Instalar ou atualizar o Airlock pela Microsoft Store (pode estar em versão anterior).

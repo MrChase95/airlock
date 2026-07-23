@@ -1,0 +1,66 @@
+name: Pedido de funcionalidade
+description: Sugira uma melhoria ou nova capacidade para o Airlock
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Descreva o problema e como a ideia ajudaria no seu dia a dia. Quanto mais concreto o fluxo, melhor.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema / necessidade
+      description: O que está difícil ou falta hoje? Foque no problema, não só na solução.
+      placeholder: Ex.: Sempre preciso copiar um valor da response e colar manualmente no environment.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução proposta
+      description: O que você gostaria que o Airlock fizesse.
+      placeholder: Ex.: Um atalho nos handlebars {{ }} da URL para criar/editar a variável no environment ativo.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Como usaria
+      description: Fluxo concreto no formato “quando eu…, quero…, para…”.
+      placeholder: |
+        Quando eu clicar em {{baseUrl}} na URL do request,
+        quero criar ou editar a variável no environment selecionado,
+        para não ter que abrir o editor de ambiente toda vez.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas (opcional)
+      description: Outras formas que você já usa ou considerou (atalhos, scripts, outra ferramenta).
+      placeholder: Ex.: Hoje exporto para Postman, edito lá e reimporto.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      description: Área mais próxima da ideia.
+      options:
+        - Cliente HTTP (Send / Response)
+        - Runner / fluxos
+        - Coleções / pastas / requests
+        - Ambientes
+        - Vault
+        - Quick Import
+        - Git Sync
+        - Mock Server
+        - Console / logs
+        - UI / acessibilidade
+        - Outro
+    validations:
+      required: true
