@@ -37,7 +37,7 @@ body:
   attributes:
     label: Comportamento esperado
     description: O que deveria acontecer.
-    placeholder: Ex.: A resposta HTTP deveria aparecer no painel Response.
+    placeholder: Ex. A resposta HTTP deveria aparecer no painel Response.
   validations:
     required: true
 - type: textarea
@@ -45,7 +45,7 @@ body:
   attributes:
     label: Comportamento atual
     description: O que de fato acontece. Cole a mensagem de erro completa, se houver.
-    placeholder: Ex.: Aparece "unable to verify the first certificate" e a requisição não completa.
+    placeholder: Ex. Aparece "unable to verify the first certificate" e a requisição não completa.
   validations:
     required: true
 - type: input
@@ -76,7 +76,7 @@ body:
   attributes:
     label: Sistema operacional
     description: SO e versão, se souber.
-    placeholder: "Ex.: Windows 11 24H2 | macOS 15.3 | Ubuntu 24.04"
+    placeholder: "Ex. Windows 11 24H2 | macOS 15.3 | Ubuntu 24.04"
   validations:
     required: true
 - type: dropdown
