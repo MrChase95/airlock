@@ -13,7 +13,7 @@ body:
   attributes:
     label: Descrição
     description: O que aconteceu? Resuma em 1–3 frases.
-    placeholder: Ex.: Ao enviar um POST com body JSON, o app trava e preciso fechar pelo Gerenciador de Tarefas.
+    placeholder: Ex. Ao enviar um POST com body JSON, o app trava e preciso fechar pelo Gerenciador de Tarefas.
   validations:
     required: true
 - type: textarea
