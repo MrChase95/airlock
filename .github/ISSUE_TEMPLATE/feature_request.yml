@@ -13,7 +13,7 @@ body:
     attributes:
       label: Problema / necessidade
       description: O que está difícil ou falta hoje? Foque no problema, não só na solução.
-      placeholder: Ex.: Sempre preciso copiar um valor da response e colar manualmente no environment.
+      placeholder: Ex. Sempre preciso copiar um valor da response e colar manualmente no environment.
     validations:
       required: true
 
@@ -22,7 +22,7 @@ body:
     attributes:
       label: Solução proposta
       description: O que você gostaria que o Airlock fizesse.
-      placeholder: Ex.: Um atalho nos handlebars {{ }} da URL para criar/editar a variável no environment ativo.
+      placeholder: Ex. Um atalho nos handlebars {{ }} da URL para criar/editar a variável no environment ativo.
     validations:
       required: true
 
@@ -43,7 +43,7 @@ body:
     attributes:
       label: Alternativas (opcional)
       description: Outras formas que você já usa ou considerou (atalhos, scripts, outra ferramenta).
-      placeholder: Ex.: Hoje exporto para Postman, edito lá e reimporto.
+      placeholder: Ex. Hoje exporto para Postman, edito lá e reimporto.
 
   - type: dropdown
     id: area
