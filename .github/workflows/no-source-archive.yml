@@ -1,0 +1,33 @@
+# GitHub always attaches a source zip and tarball to a release. Those archives
+# follow git archive, so .gitattributes must export-ignore every path. This
+# workflow fails if a future change lets files back into that archive.
+
+name: Empty release source archives
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*.*.*']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  source-archive-empty:
+    name: Source archive contains no files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Reject any file in the git archive
+        run: |
+          set -euo pipefail
+          list="$(git archive --format=tar HEAD | tar -t || true)"
+          if [[ -n "${list// }" ]]; then
+            echo "GitHub release source archives must be empty. Found:" >&2
+            printf '%s\n' "$list" >&2
+            echo "Keep every path export-ignore in .gitattributes." >&2
+            exit 1
+          fi
+          echo "Source archive is empty."

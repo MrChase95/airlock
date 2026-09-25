@@ -1,0 +1,6 @@
+# GitHub builds each release's "Source code" zip and tarball with git archive.
+# This repo ships installers only, so those archives must stay empty.
+* export-ignore
+.* export-ignore
+.github export-ignore
+.github/** export-ignore
